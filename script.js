@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const questions = [
     {
-      text: "Сколько времени ты готов гулять с\u00A0собакой?",
+      text: "Сколько времени ты готов гулять\u00A0с\u00A0собакой?",
       image: "img/question1.png",
       alt: "Иллюстрация к вопросу",
       answers: [
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      text: "Как ты относишься к\u00A0шерсти в\u00A0доме?",
+      text: "Как ты относишься к\u00A0шерсти\u00A0в\u00A0доме?",
       image: "img/question4.png",
       alt: "Иллюстрация к вопросу 4",
       answers: [
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      text: "Насколько тебе важен контакт с\u00A0собакой?",
+      text: "Насколько тебе важен контакт\u00A0с\u00A0собакой?",
       image: "img/question9.png",
       alt: "Иллюстрация к вопросу 9",
       answers: [
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ]
     },
     {
-      text: "Как ты относишься к\u00A0собачьему лаю?",
+      text: "Как ты относишься к\u00A0собачьему\u00A0лаю?",
       image: "img/question10.png",
       alt: "Иллюстрация к вопросу 10",
       answers: [

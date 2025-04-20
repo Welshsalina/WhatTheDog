@@ -91,9 +91,9 @@ body:not(.quiz-started) #result-screen-mobile {
   .text-title-2   { font-size: 28px; line-height: 32px; font-weight: 700; text-decoration: underline } /* bold */
   .text-title-3   { font-size: 24px; line-height: 28px; font-weight: 700; } /* bold */
   .text-button    { font-size: 20px; line-height: 20px; font-weight: 700; } /* bold */
-  .text-subtitle  { font-size: 16px; line-height: 20px; font-weight: 700; } /* bold */
-  .text-text-1    { font-size: 16px; line-height: 20px; font-weight: 400; } /* regular */
-  .text-text-2    { font-size: 16px; line-height: 20px; font-weight: 400; font-style: italic; } /* regular italic */
+  .text-subtitle  { font-size: 18px; line-height: 20px; font-weight: 700; } /* bold */
+  .text-text-1    { font-size: 18px; line-height: 20px; font-weight: 400; } /* regular */
+  .text-text-2    { font-size: 18px; line-height: 20px; font-weight: 400; font-style: italic; } /* regular italic */
 }
 
 /* ======================================== */
@@ -317,7 +317,7 @@ body:not(.quiz-started) #result-screen-mobile {
   .quiz-mobile-main { /* Вопрос + номер */
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
     width: 100%;
     align-items: center;
     justify-content: flex-start;
