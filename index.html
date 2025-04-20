@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatTheDog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐶</text></svg>" />
+</head>
+<body>
+  <!-- СТАРТОВЫЙ ЭКРАН (ДЕСКТОП) -->
+  <section id="start-screen">
+    <div class="container">
+      <img src="img/husky.png" alt="Хаски" />
+      <div class="main-content">
+        <div class="heading-block">
+          <h1 class="text-title-1">Какая порода собак тебе подходит?</h1>
+          <p class="text-text-1">
+            Ты хочешь жизнерадостного друга, а берёшь упрямого философа в шерсти. Потом вместестрадаете.<br />
+            Чтобы такого не случилось, проходи тест —<br />
+            подберём породу по вайбу, а не по инстаграму
+          </p>
+        </div>
+        <button class="start-button text-button">Начать тест</button>
+      </div>
+      <img src="img/pug.png" alt="Мопс" />
+    </div>
+  </section>
+
+  <!-- СТАРТОВЫЙ ЭКРАН (МОБИЛКА) -->
+  <section id="start-screen-mobile">
+    <div class="start-mobile-container">
+      <div class="start-images">
+        <img class="start-dog-img" src="img/husky.png" alt="Хаски" />
+        <img class="start-dog-img" src="img/pug.png" alt="Мопс" />
+      </div>
+      <div class="start-content">
+        <h1 class="text-title-1">Какая порода собак тебе подходит?</h1>
+        <p class="text-text-1">
+          Ты хочешь жизнерадостного друга, а&nbsp;берёшь упрямого философа в&nbsp;шерсти.<br />
+          Потом вместе страдаете.<br />
+          Чтобы&nbsp;такого не&nbsp;случилось, проходи тест —<br />
+          подберём породу по&nbsp;вайбу, а&nbsp;не&nbsp;по&nbsp;инстаграму
+        </p>
+        <button class="start-button text-button">Начать тест</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЭКРАН С ТЕСТОМ (ДЕСКТОП) -->
+  <section id="quiz-screen">
+    <div class="quiz-main-content">
+      <h2 id="question-text" class="text-title-3">Вопрос</h2>
+      <p id="question-counter" class="text-text-2">Вопрос 1/10</p>
+      <img id="question-image" src="img/question.png" alt="Вопрос" />
+    </div>
+    <div class="buttons">
+      <button class="answer-button text-button" data-index="0"></button>
+      <button class="answer-button text-button" data-index="1"></button>
+      <button class="answer-button text-button" data-index="2"></button>
+      <button class="answer-button text-button" data-index="3"></button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН С ТЕСТОМ (МОБИЛКА) -->
+  <section id="quiz-screen-mobile">
+    <div class="quiz-mobile-container">
+      <div class="quiz-mobile-main">
+        <h2 id="question-text-mobile" class="text-title-3">Вопрос</h2>
+        <p id="question-counter-mobile" class="text-text-2">Вопрос 1/10</p>
+        <img id="question-image-mobile" src="img/question.png" alt="Вопрос" />
+      </div>
+      <div class="quiz-mobile-buttons">
+        <button class="answer-button-mobile text-button" data-index="0"></button>
+        <button class="answer-button-mobile text-button" data-index="1"></button>
+        <button class="answer-button-mobile text-button" data-index="2"></button>
+        <button class="answer-button-mobile text-button" data-index="3"></button>
+      </div>
+    </div>
+  </section>
+
+   <!-- ЭКРАН РЕЗУЛЬТАТА (ДЕСКТОП) -->
+   <section id="result-screen">
+    <div class="result-main-content">
+      <h2 id="result-title" class="text-title-2">Заголовок</h2>
+      <div class="result-subtitle-text-image">
+        <div class="result-text-block">
+          <p id="result-breeds" class="text-subtitle">Породы</p>
+          <p id="result-description" class="text-text-1">Описание породы с переносами</p>
+        </div>
+        <img id="result-image" class="result-image" src="img/result.png" alt="Результат" />
+      </div>
+    </div>
+    <div class="result-comment">
+      <img src="img/author.png" alt="Автор" class="author-image" />
+      <p class="text-text-2 comment-text">
+        Привет!<br />
+        Меня зовут Ира, я&nbsp;IT&nbsp;Project&nbsp;Manager и&nbsp;создала этот тест в&nbsp;рамках обучения основам программирования.<br />
+        Сейчас я&nbsp;в&nbsp;поиске работы и&nbsp;буду благодарна рекомендациям 🙌
+        <a href="https://www.linkedin.com/in/iryna-salina-b86130271/" 
+        target="_blank" 
+        style="color: inherit; text-decoration: underline;">
+        Вот моя страница на LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <!-- ЭКРАН РЕЗУЛЬТАТА (МОБИЛКА) -->
+  <section id="result-screen-mobile">
+    <div class="result-mobile-main">
+      <h2 id="result-title-mobile" class="text-title-2">Заголовок</h2>
+      <img id="result-image-mobile" class="result-image-mobile" src="img/result.png" alt="Результат" />
+      <p id="result-breeds-mobile" class="text-subtitle">Породы</p>
+      <p id="result-description-mobile" class="text-text-1">
+        Описание с переносами\n\nдолжно отображаться правильно
+      </p>
+    </div>
+    <div class="result-mobile-comment">
+      <img src="img/author.png" alt="Автор" class="author-image-mobile" />
+      <p class="text-text-2 comment-text-mobile">
+        Привет!<br /><br /> 
+        Меня зовут Ира, я&nbsp;IT&nbsp;Project&nbsp;Manager и&nbsp;создала этот тест в&nbsp;рамках обучения основам программирования.<br /><br />
+        Сейчас я&nbsp;в&nbsp;поиске работы и&nbsp;буду благодарна рекомендациям 🙌<br /><br />
+        <a href="https://www.linkedin.com/in/iryna-salina-b86130271/" 
+        target="_blank" 
+        style="color: inherit; text-decoration: underline;">
+        Вот моя страница на LinkedIn
+      </a>
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
