@@ -232,12 +232,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const topGroup = Object.entries(groupScores).sort((a, b) => b[1] - a[1])[0][0];
       const result = groupResults[topGroup];
-      // 🔥  Отправка результата в Google Analytics с защитой
-      if (typeof gtag === 'function') {
+     // ✅ Обновлено: безопасная отправка события результата
+      if (window.gtagReady && typeof gtag === 'function') {
+        console.log("✅ Событие отправлено: quiz_result", topGroup);
         gtag('event', 'quiz_result', {
           event_category: 'quiz',
           event_label: topGroup
         });
+      } else {
+        console.warn("⚠️ GA не готов: quiz_result не отправлен");
       }
 
       if (isMobile()) {
@@ -280,12 +283,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Назначаем обработчик на обе кнопки старта
   startButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      // 🔥 Отправка события "Начать тест" с проверкой gtag
-      if (typeof gtag === 'function') {
+      // ✅ Обновлено: безопасная отправка события начала теста
+      if (window.gtagReady && typeof gtag === 'function') {
+        console.log("🎯 Событие отправлено: start_quiz");
         gtag('event', 'start_quiz', {
           event_category: 'quiz',
           event_label: 'begin'
         });
+      } else {
+        console.warn("⚠️ GA не готов: start_quiz не отправлен");
       }
       handleStart();
     });
